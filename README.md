@@ -1,8 +1,6 @@
 # Generalized Harmonic Numbers Calculator
 
-This program calculates the nth generalized harmonic number of order r, as defined by the formula:
-
-\[ H(n, r) = \frac{1}{1^r} + \frac{1}{2^r} + \cdots + \frac{1}{n^r} \]
+This program calculates the nth generalized harmonic number of order r, as defined by the formula: H(n, r) = 1/1<sup>r</sup> + 1/2<sup>r</sup> + ... + 1/n<sup>r</sup>
 
 ## Usage
 
@@ -32,7 +30,7 @@ $ java GeneralizedHarmonic 3 2
 
 The program:
 1. Takes two integer command-line arguments `n` and `r`
-2. Uses a `for` loop to compute the sum of reciprocal powers from 1 to n
+2. Uses a `for` loop to compute the sum of 1/k<sup>r</sup> for k from 1 to n
 3. Prints the resulting generalized harmonic number as a double value
 
 ## Mathematical Background
@@ -41,4 +39,6 @@ Generalized harmonic numbers are related to the Riemann zeta function, which is 
 
 ## Note
 
-The program assumes that the input `n` is a positive integer.
+The program assumes that:
+- `n` is a positive integer
+- `r` can be any integer (though mathematically, it's typically considered for r > 0)
